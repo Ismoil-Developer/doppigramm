@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/my_profile"
+            android:icon="@drawable/ic_prf_circle"
+            android:title="My Profile" />
+    </group>
+
+    <item
+        android:id="@+id/divider1"
+        android:title=""
+        android:enabled="false"
+         />
+
+        <item
+            android:id="@+id/create_group"
+            android:icon="@drawable/ic_group"
+            android:title="Create Group" />
+
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_profile"
+            android:title="Contact" />
+
+        <item
+            android:id="@+id/call"
+            android:icon="@drawable/ic_call"
+            android:title="Calls" />
+
+        <item
+            android:id="@+id/save"
+            android:icon="@drawable/ic_bookmark"
+            android:title="Izbrannoe" />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+
+    <item
+        android:id="@+id/divider2"
+        android:title=""
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+
+    <group>
+        <item
+            android:id="@+id/sendFriends"
+            android:icon="@drawable/ic_add_person"
+            android:title="Priglasit druzey" />
+
+        <item
+            android:id="@+id/question"
+            android:icon="@drawable/ic_question_circle"
+            android:title="Vozmojnosti Telegram" />
+    </group>
+
+</menu>

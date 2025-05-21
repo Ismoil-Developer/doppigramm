@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        tools:layout="@layout/screen_splash"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.splash.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_introScreen"
+            app:destination="@id/introScreen" />
+        <action
+            android:id="@+id/action_splashScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/introScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.intro.IntroScreen"
+        android:label="IntroScreen" >
+        <action
+            android:id="@+id/action_introScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.main.MainScreen"
+        android:label="MainScreen" />
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.auth.login.LoginScreen"
+        android:label="LoginScreen" >
+
+
+        <action
+            android:id="@+id/action_loginScreen_to_confirmScreen"
+            app:destination="@id/confirmScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.auth.confirm.ConfirmScreen"
+        android:label="ConfirmScreen" >
+        <action
+            android:id="@+id/action_confirmScreen_to_profileFirstScreen"
+            app:destination="@id/profileFirstScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFirstScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.profile.ProfileFirstScreen"
+        android:label="ProfileFirstScreen" >
+        <action
+            android:id="@+id/action_profileFirstScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+
+
+</navigation>

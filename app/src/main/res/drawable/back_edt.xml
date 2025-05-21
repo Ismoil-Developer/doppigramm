@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Foydalanuvchi bosgan (focused) holat -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <stroke android:width="1dp" android:color="#0088cc" /> <!-- Telegram ko‘k rangi -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Oddiy holat -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <stroke android:width="1dp" android:color="#D0D0D0"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+</selector>
