@@ -16,6 +16,7 @@ class UserChatScreen:Fragment(R.layout.screen_user_chat) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
     }
 
 }
