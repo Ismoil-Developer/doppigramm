@@ -23,7 +23,7 @@
             android:layout_height="35dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:src="@drawable/image_profile"
+            android:src="@drawable/ic_profile"
             />
 
         <LinearLayout
