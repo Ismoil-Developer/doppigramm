@@ -19,38 +19,14 @@ class LoginScreen : Fragment(R.layout.screen_login) {
     private val binding: ScreenLoginBinding by viewBinding(ScreenLoginBinding::bind)
     private val viewModel:LoginScreenViewModel by viewModels<LoginScreenViewModelImpl>()
 
-    private lateinit var countrySelector: TextView
-    private lateinit var countryCode: TextView
-    private lateinit var ccp: CountryCodePicker
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        countrySelector = binding.countrySelector
-        countryCode = binding.countryCode
 
-        ccp = CountryCodePicker(requireContext())
 
-        countrySelector.setOnClickListener {
-            ccp.launchCountrySelectionDialog()
-        }
+       
 
-        ccp.setOnCountryChangeListener {
-            val countryName = ccp.selectedCountryName
-            val countryCodeString = "+${ccp.selectedCountryCode}"
-            val countryAlphaCode = ccp.selectedCountryNameCode
-            val flagEmoji = getFlagEmoji(countryAlphaCode)
-
-            // 1. Davlat nomi + flag
-            countrySelector.text = "$flagEmoji $countryName"
-
-            // 2. Country code ni chiqarish
-            countryCode.text = countryCodeString
-
-            // 3. Telefon raqam mask hint
-            val hint = getPhoneHintForCountry(ccp.selectedCountryNameCode)
-            binding.phoneEditText.hint = hint
-        }
 
         binding.icNext.setOnClickListener {
             viewModel.openConfirmScreen()
