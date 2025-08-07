@@ -4,8 +4,8 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import uz.mrx.doppigramm.presentation.direction.confirm.ConfirmScreenDirection
-import uz.mrx.doppigramm.presentation.direction.confirm.impl.ConfirmScreenDirectionImpl
+import uz.mrx.doppigramm.presentation.direction.register.RegisterScreenDirection
+import uz.mrx.doppigramm.presentation.direction.register.impl.RegisterScreenDirectionImpl
 import uz.mrx.doppigramm.presentation.direction.intro.IntroScreenDirection
 import uz.mrx.doppigramm.presentation.direction.intro.impl.IntroScreenDirectionImpl
 import uz.mrx.doppigramm.presentation.direction.login.LoginScreenDirection
@@ -26,7 +26,7 @@ interface DirectionModule {
     fun bindIntroScreenDirection(impl: IntroScreenDirectionImpl): IntroScreenDirection
 
     @[Binds]
-    fun bindConfirmScreenDirection(impl: ConfirmScreenDirectionImpl): ConfirmScreenDirection
+    fun bindConfirmScreenDirection(impl: RegisterScreenDirectionImpl): RegisterScreenDirection
 
     @[Binds]
     fun bindLoginScreenDirection(impl: LoginScreenDirectionImpl): LoginScreenDirection

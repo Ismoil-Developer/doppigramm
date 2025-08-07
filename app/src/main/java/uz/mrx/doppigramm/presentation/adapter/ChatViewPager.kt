@@ -1,10 +1,10 @@
-package uz.mrx.doppigramm.presentation.ui.screen.adapter
+package uz.mrx.doppigramm.presentation.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import uz.mrx.doppigramm.presentation.ui.screen.chat.GroupChatPage
-import uz.mrx.doppigramm.presentation.ui.screen.chat.PersonChatPage
+import uz.mrx.doppigramm.presentation.ui.screen.fragment.chat.GroupChatPage
+import uz.mrx.doppigramm.presentation.ui.screen.fragment.chat.PersonChatPage
 
 class ChatViewPager (fm: FragmentActivity) : FragmentStateAdapter(fm) {
     override fun getItemCount(): Int = 2

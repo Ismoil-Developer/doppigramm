@@ -23,7 +23,7 @@
         android:label="IntroScreen" >
         <action
             android:id="@+id/action_introScreen_to_loginScreen"
-            app:destination="@id/loginScreen" />
+            app:destination="@id/registerScreen" />
     </fragment>
     <fragment
         android:id="@+id/mainScreen"
@@ -33,19 +33,18 @@
         android:id="@+id/loginScreen"
         android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.auth.login.LoginScreen"
         android:label="LoginScreen" >
-
-
         <action
-            android:id="@+id/action_loginScreen_to_confirmScreen"
-            app:destination="@id/confirmScreen" />
+            android:id="@+id/action_loginScreen_to_profileFirstScreen"
+            app:destination="@id/profileFirstScreen" />
     </fragment>
+
     <fragment
-        android:id="@+id/confirmScreen"
-        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.auth.confirm.ConfirmScreen"
+        android:id="@+id/registerScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.auth.register.RegisterScreen"
         android:label="ConfirmScreen" >
         <action
-            android:id="@+id/action_confirmScreen_to_profileFirstScreen"
-            app:destination="@id/profileFirstScreen" />
+            android:id="@+id/action_registerScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
     </fragment>
     <fragment
         android:id="@+id/profileFirstScreen"

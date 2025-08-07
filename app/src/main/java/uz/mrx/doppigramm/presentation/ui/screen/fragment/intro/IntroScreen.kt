@@ -10,7 +10,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import uz.mrx.doppigramm.R
 import uz.mrx.doppigramm.data.model.IntroItem
 import uz.mrx.doppigramm.databinding.ScreenIntroBinding
-import uz.mrx.doppigramm.presentation.ui.screen.adapter.IntroAdapter
+import uz.mrx.doppigramm.presentation.adapter.IntroAdapter
 import uz.mrx.doppigramm.presentation.ui.viewmodel.intro.IntroScreenViewModel
 import uz.mrx.doppigramm.presentation.ui.viewmodel.intro.impl.IntroScreenViewModelImpl
 

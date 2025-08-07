@@ -11,9 +11,9 @@ import javax.inject.Inject
 @HiltViewModel
 class LoginScreenViewModelImpl @Inject constructor(private val direction:LoginScreenDirection):LoginScreenViewModel, ViewModel() {
 
-    override fun openConfirmScreen() {
+    override fun openFirstProfileScreen() {
         viewModelScope.launch {
-            direction.openConfirmScreen()
+            direction.openFirstProfileScreen()
         }
     }
 

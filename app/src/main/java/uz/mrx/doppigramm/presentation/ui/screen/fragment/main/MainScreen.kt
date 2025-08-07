@@ -12,7 +12,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 import uz.mrx.doppigramm.R
 import uz.mrx.doppigramm.databinding.ScreenMainBinding
-import uz.mrx.doppigramm.presentation.ui.screen.adapter.ChatViewPager
+import uz.mrx.doppigramm.presentation.adapter.ChatViewPager
 
 @AndroidEntryPoint
 class MainScreen:Fragment(R.layout.screen_main) {

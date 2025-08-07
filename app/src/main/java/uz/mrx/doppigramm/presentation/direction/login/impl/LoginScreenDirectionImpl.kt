@@ -7,8 +7,8 @@ import javax.inject.Inject
 
 class LoginScreenDirectionImpl @Inject constructor(private val navigator: Navigator):LoginScreenDirection {
 
-    override suspend fun openConfirmScreen() {
-        navigator.navigateTo(LoginScreenDirections.actionLoginScreenToConfirmScreen())
+    override suspend fun openFirstProfileScreen() {
+        navigator.navigateTo(LoginScreenDirections.actionLoginScreenToProfileFirstScreen())
     }
 
 }

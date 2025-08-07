@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             it.invoke(navHost.navController)
         }.launchIn(lifecycleScope)
 
+
     }
 
 }

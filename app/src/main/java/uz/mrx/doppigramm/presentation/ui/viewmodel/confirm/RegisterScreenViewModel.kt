@@ -1,8 +1,8 @@
 package uz.mrx.doppigramm.presentation.ui.viewmodel.confirm
 
 
-interface ConfirmScreenViewModel {
+interface RegisterScreenViewModel {
 
-    fun openScreen()
+    fun openLoginScreen()
 
 }

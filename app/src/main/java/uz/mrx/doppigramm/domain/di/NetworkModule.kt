@@ -13,6 +13,7 @@ import uz.mrx.doppigramm.data.remote.api.RegisterApi
 import uz.mrx.doppigramm.utils.RequestInterceptor
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+
 @Module
 @InstallIn(SingletonComponent::class)
 class NetworkModule {

@@ -1,4 +1,4 @@
-package uz.mrx.doppigramm.presentation.ui.screen.chat
+package uz.mrx.doppigramm.presentation.ui.screen.fragment.chat
 
 import android.os.Bundle
 import android.view.View

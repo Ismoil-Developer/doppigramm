@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_back"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/ln_btn_back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="33dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/text_color_bold"
+                />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Ro'yhatdan o'tish"
+                android:textColor="@color/text_bold"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/ln_btn_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ln_btn_back" />
+
+            <TextView
+                android:id="@+id/enter_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Telefon raqam orqali ro'yhatdan o'tiladi"
+                android:textColor="@color/text_bold"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+            <TextView
+                android:id="@+id/emailTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/font_family_medium"
+                android:text="Ro'yhatdan o'tish uchun ma'lumotlarni to'lfiring"
+                android:textColor="@color/text_medium"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enter_email" />
+
+
+            <TextView
+                android:id="@+id/emailTxtEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/font_family_medium"
+                android:text="Telefon raqam"
+                android:textColor="@color/text_medium"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailTxt" />
+
+            <EditText
+                android:id="@+id/edt_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_unselected"
+                android:hint="+998"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_bold"
+                android:textColorHint="@color/text_medium"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailTxtEdt" />
+
+
+            <TextView
+                android:id="@+id/innTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Ismningiz"
+                android:textColor="@color/text_medium"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_gmail"
+
+                />
+
+            <EditText
+                android:id="@+id/edt_INN"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_unselected"
+                android:maxLength="9"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_bold"
+                android:textColorHint="@color/text_medium"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/innTxt" />
+
+            <TextView
+                android:id="@+id/passwordTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Parol kiriting"
+                android:textColor="@color/text_medium"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_INN" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_unselected"
+                android:gravity="center_vertical"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/text_medium"
+                app:hintEnabled="false"
+                app:layout_constraintTop_toBottomOf="@id/passwordTxt">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/text_bold"
+                    android:textColorHint="@color/text_medium"
+                    android:textSize="14sp"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/passwordNewTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Parol tasdiqlash"
+                android:textColor="@color/text_medium"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/til_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/text_medium"
+                android:background="@drawable/shape_unselected"
+                app:layout_constraintTop_toBottomOf="@id/passwordNewTxt"
+                android:gravity="center_vertical"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text_bold"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/text_medium"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/offerta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/til_confirm_password"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox_accept_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:checked="false"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textOfferta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ro‘yxatdan o‘tish uchun ommaviy oferta shartlari bilan tanishib chiqing va rozilik bildiring"
+                    android:textColor="@color/blue"
+                    android:gravity="center_vertical|start"
+                    />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mb_sent_sms_code"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/back_style_foreground"
+                android:text="Ro'yhatdan o'tish"
+                android:textColor="@color/oq"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintTop_toBottomOf="@id/offerta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

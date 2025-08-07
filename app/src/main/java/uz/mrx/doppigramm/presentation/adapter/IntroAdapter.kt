@@ -1,4 +1,4 @@
-package uz.mrx.doppigramm.presentation.ui.screen.adapter
+package uz.mrx.doppigramm.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.View

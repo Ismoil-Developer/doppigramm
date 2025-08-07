@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="blue">#2196F3</color>
-    <color name="text_medium">#686868</color>
-    <color name="asosiy_rang">#2DC232</color>
+
     <color name="bgColor">#FFFFFF</color>
 
+    <color name="screen_back">#FFFFFF</color>
+    <color name="logo_back">#64625B</color>
+    <color name="logo_name">#2DC232</color>
+    <color name="drawer_back">#FFFFFF</color>
+    <color name="profile_back">#F2F2F2</color>
+    <color name="text_bold">#000F03</color>
+    <color name="text_medium">#686868</color>
+    <color name="button_unselected">#F2F2F2</color>
+    <color name="button_text">#CECECE</color>
+    <color name="menu_stroke">#F2F2F2</color>
+    <color name="bottom_navigation">#FFFFFF</color>
+    <color name="edt_color">#F2F4F3</color>
+    <color name="back_cal_button">#F2F2F2</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="selected">#000000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#8692A6</color>
+    <color name="blue">#1F9DD1</color>
+    <color name="red">#FF4343</color>
+    <color name="line_back">#E2E4E7</color>
+    <color name="mainBgColor">#FFFFFF</color>
+    <color name="text_color_bold">#1D2939</color>
+    <color name="splash_back">#2DC232</color>
+    <color name="monserrat_back">#000F03</color>
+    <color name="oq_3d">#CECECE</color>
+    <color name="oq_daraja">#F2F4F3</color>
+    <color name="oq">#FFFFFF</color>
+    <color name="asosiy_rang">#2DC232</color>
+    <color name="qora_2d">#686868</color>
+    <color name="qora_3d">#CECECE</color>
+    <color name="qora">#000F03</color>
+    <color name="qizil">#EC3C3C</color>
 
 </resources>
