@@ -22,4 +22,5 @@ class RequestInterceptor @Inject constructor(
 
         return chain.proceed(requestBuilder.build())
     }
+
 }

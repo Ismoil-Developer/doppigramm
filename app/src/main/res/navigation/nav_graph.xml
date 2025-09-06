@@ -17,6 +17,7 @@
             android:id="@+id/action_splashScreen_to_mainScreen"
             app:destination="@id/mainScreen" />
     </fragment>
+
     <fragment
         android:id="@+id/introScreen"
         android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.intro.IntroScreen"
@@ -25,6 +26,7 @@
             android:id="@+id/action_introScreen_to_loginScreen"
             app:destination="@id/registerScreen" />
     </fragment>
+
     <fragment
         android:id="@+id/mainScreen"
         android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.main.MainScreen"

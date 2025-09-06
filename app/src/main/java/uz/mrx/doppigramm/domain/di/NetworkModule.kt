@@ -48,4 +48,5 @@ class NetworkModule {
     fun provideRegisterApi(retrofit: Retrofit): RegisterApi =
         retrofit.create(RegisterApi::class.java)
 
+
 }
