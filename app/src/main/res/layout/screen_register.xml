@@ -264,11 +264,25 @@
                 android:textColor="@color/oq"
                 android:textSize="16sp"
                 android:textAllCaps="false"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="10dp"
                 app:layout_constraintTop_toBottomOf="@id/offerta"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/login"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Login oynasiga o'tish"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@id/mb_sent_sms_code"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

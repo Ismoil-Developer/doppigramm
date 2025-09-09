@@ -9,6 +9,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import uz.mrx.doppigramm.data.remote.api.ChatApi
 import uz.mrx.doppigramm.data.remote.api.RegisterApi
 import uz.mrx.doppigramm.utils.RequestInterceptor
 import java.util.concurrent.TimeUnit
@@ -47,6 +48,11 @@ class NetworkModule {
     @Singleton
     fun provideRegisterApi(retrofit: Retrofit): RegisterApi =
         retrofit.create(RegisterApi::class.java)
+
+    @Provides
+    @Singleton
+    fun provideChatApi(retrofit: Retrofit): ChatApi =
+        retrofit.create(ChatApi::class.java)
 
 
 }

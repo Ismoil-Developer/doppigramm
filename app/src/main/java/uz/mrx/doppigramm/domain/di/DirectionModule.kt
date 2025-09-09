@@ -4,12 +4,16 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import uz.mrx.doppigramm.presentation.direction.contact.ContactScreenDirection
+import uz.mrx.doppigramm.presentation.direction.contact.impl.ContactScreenDirectionImpl
 import uz.mrx.doppigramm.presentation.direction.register.RegisterScreenDirection
 import uz.mrx.doppigramm.presentation.direction.register.impl.RegisterScreenDirectionImpl
 import uz.mrx.doppigramm.presentation.direction.intro.IntroScreenDirection
 import uz.mrx.doppigramm.presentation.direction.intro.impl.IntroScreenDirectionImpl
 import uz.mrx.doppigramm.presentation.direction.login.LoginScreenDirection
 import uz.mrx.doppigramm.presentation.direction.login.impl.LoginScreenDirectionImpl
+import uz.mrx.doppigramm.presentation.direction.main.MainScreenDirection
+import uz.mrx.doppigramm.presentation.direction.main.impl.MainScreenDirectionImpl
 import uz.mrx.doppigramm.presentation.direction.profile.ProfileScreenFirstDirection
 import uz.mrx.doppigramm.presentation.direction.profile.impl.ProfileScreenFirstDirectionImpl
 import uz.mrx.doppigramm.presentation.direction.splash.SplashScreenDirection
@@ -31,8 +35,15 @@ interface DirectionModule {
     @[Binds]
     fun bindLoginScreenDirection(impl: LoginScreenDirectionImpl): LoginScreenDirection
 
-
     @[Binds]
     fun bindProfileFirstScreenDirection(impl: ProfileScreenFirstDirectionImpl): ProfileScreenFirstDirection
+
+    @[Binds]
+    fun bindContactScreenScreenDirection(impl: ContactScreenDirectionImpl): ContactScreenDirection
+
+
+    @[Binds]
+    fun bindMainScreenScreenDirection(impl: MainScreenDirectionImpl): MainScreenDirection
+
 
 }

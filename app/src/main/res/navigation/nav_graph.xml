@@ -30,7 +30,14 @@
     <fragment
         android:id="@+id/mainScreen"
         android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.main.MainScreen"
-        android:label="MainScreen" />
+        android:label="MainScreen" >
+        <action
+            android:id="@+id/action_mainScreen_to_contactScreen"
+            app:destination="@id/contactScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_userChatScreen"
+            app:destination="@id/userChatScreen" />
+    </fragment>
     <fragment
         android:id="@+id/loginScreen"
         android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.auth.login.LoginScreen"
@@ -56,6 +63,18 @@
             android:id="@+id/action_profileFirstScreen_to_mainScreen"
             app:destination="@id/mainScreen" />
     </fragment>
+    <fragment
+        android:id="@+id/contactScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.chat.ContactScreen"
+        android:label="ContactScreen" >
+        <action
+            android:id="@+id/action_contactScreen_to_userChatScreen"
+            app:destination="@id/userChatScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/userChatScreen"
+        android:name="uz.mrx.doppigramm.presentation.ui.screen.fragment.chat.UserChatScreen"
+        android:label="UserChatScreen" />
 
 
 </navigation>

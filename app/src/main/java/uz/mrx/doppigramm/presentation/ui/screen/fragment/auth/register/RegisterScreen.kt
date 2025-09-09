@@ -58,7 +58,13 @@ class RegisterScreen : Fragment(R.layout.screen_register) {
                 password = password,
                 password_confirmation = confirmPassword
             )
+
             viewModel.postRegister(request)
+
+        }
+
+        binding.login.setOnClickListener {
+            viewModel.openLoginScreen()
         }
 
         // 📌 Response kuzatish
@@ -73,7 +79,6 @@ class RegisterScreen : Fragment(R.layout.screen_register) {
                 viewModel.openLoginScreen()
             }
         }
+
     }
-
-
-}
+}   

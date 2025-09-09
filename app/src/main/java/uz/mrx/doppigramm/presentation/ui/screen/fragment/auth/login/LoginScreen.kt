@@ -30,7 +30,6 @@ class LoginScreen : Fragment(R.layout.screen_login) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         binding.mbSentSmsCode.setOnClickListener {
             val phone = binding.edtGmail.text.toString().trim()
             val password = binding.tietPassword.text.toString().trim()

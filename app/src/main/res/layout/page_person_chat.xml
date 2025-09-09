@@ -20,17 +20,5 @@
         tools:listitem="@layout/item_person_chat"
         />
 
-    <ImageView
-        android:id="@+id/contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_edit"
-        android:background="@drawable/back_next"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="80dp"
-        android:layout_marginEnd="30dp"
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

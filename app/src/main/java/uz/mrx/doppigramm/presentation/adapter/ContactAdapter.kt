@@ -5,21 +5,20 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import uz.mrx.doppigramm.data.remote.response.chat.ChatResponse
 import uz.mrx.doppigramm.data.remote.response.chat.ContactResponse
-import uz.mrx.doppigramm.databinding.ItemPersonChatBinding
+import uz.mrx.doppigramm.databinding.ItemContactBinding
 
-class PersonChatAdapter(private var onItemClickListener: (ChatResponse) -> Unit) :
-    ListAdapter<ChatResponse, PersonChatAdapter.ViewHolder>(ChatResponseDiffUtilCallback) {
+class ContactAdapter(private var onItemClickListener: (ContactResponse) -> Unit) :
+    ListAdapter<ContactResponse, ContactAdapter.ViewHolder>(ContactResponseDiffUtilCallback) {
 
-    inner class ViewHolder(private val binding: ItemPersonChatBinding) :
+    inner class ViewHolder(private val binding: ItemContactBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun onBind() {
 
             val shop = getItem(absoluteAdapterPosition)
 
-            binding.namePrf.text = shop.user.full_name
+            binding.namePrf.text = shop.full_name
 
             itemView.setOnClickListener {
                 onItemClickListener.invoke(shop)
@@ -31,7 +30,7 @@ class PersonChatAdapter(private var onItemClickListener: (ChatResponse) -> Unit)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            ItemPersonChatBinding.inflate(
+            ItemContactBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -41,12 +40,12 @@ class PersonChatAdapter(private var onItemClickListener: (ChatResponse) -> Unit)
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.onBind()
 
-    object ChatResponseDiffUtilCallback : DiffUtil.ItemCallback<ChatResponse>() {
-        override fun areItemsTheSame(oldItem: ChatResponse, newItem: ChatResponse): Boolean {
+    object ContactResponseDiffUtilCallback : DiffUtil.ItemCallback<ContactResponse>() {
+        override fun areItemsTheSame(oldItem: ContactResponse, newItem: ContactResponse): Boolean {
             return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: ChatResponse, newItem: ChatResponse): Boolean {
+        override fun areContentsTheSame(oldItem: ContactResponse, newItem: ContactResponse): Boolean {
             return oldItem == newItem
         }
     }
